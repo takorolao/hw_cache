@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Characters</title>
+<body>
+    <h1>Characters</h1>
+    <ul>
+        {% for character in characters %}
+            <li>{{ character.name }} - {{ character.occupation }}</li>
+        {% empty %}
+            <li>No characters available</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
