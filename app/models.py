@@ -9,3 +9,8 @@ class Character(models.Model):
     def __str__(self):
         return self.name
 
+    def get_occupation_display(self):
+        return self.occupation
+
+    class Meta:
+        ordering = ['name']
